@@ -1,0 +1,62 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.columnar.tech/dbc/ + https://github.com/columnar-tech/skills
+clis:
+- name: dbc
+  summary: Command-line package manager for installing and managing Apache Arrow Database Connectivity (ADBC) drivers across macOS, Linux, and Windows and across 8 languages.
+  docs: https://docs.columnar.tech/dbc/
+  repo: https://github.com/columnar-tech/dbc
+  install:
+  - curl -LsSf https://dbc.columnar.tech/install.sh | sh
+  - brew install columnar-tech/tap/dbc
+  - uv tool install dbc
+  - pipx install dbc
+  - npm install -g @columnar-tech/dbc
+  - powershell -ExecutionPolicy ByPass -c irm https://dbc.columnar.tech/install.ps1 | iex
+  - winget install Columnar.dbc
+  commands:
+  - name: install
+    summary: Install a driver (e.g. dbc install snowflake). Idempotent. --pre installs pre-release drivers.
+  - name: search
+    summary: 'Search for a driver by pattern (dbc search sql). With no args also lists installed drivers (entries marked [installed: ...]).'
+  - name: info
+    summary: Get driver details (dbc info <driver>).
+  - name: init
+    summary: Create a dbc.toml driver-list file.
+  - name: add
+    summary: Add a driver to dbc.toml with optional version constraint (dbc add "postgresql>=13.0").
+  - name: sync
+    summary: Install all drivers in dbc.toml and write dbc.lock (reproducible environments).
+  - name: auth login
+    summary: Authenticate with private/proprietary driver registries.
+  notes:
+  - There is no `dbc list` command — use `dbc search` to see installed drivers.
+- name: databow
+  summary: Command-line SQL query tool for querying any ADBC-supported database (BigQuery, ClickHouse, Databricks, DuckDB, MySQL, PostgreSQL, Redshift, Snowflake, SQLite, Trino, and more). Interactive REPL plus non-interactive mode for scripts and agents.
+  docs: https://arrow.apache.org/adbc/current/index.html
+  repo: https://github.com/columnar-tech/databow
+  install:
+  - uv tool install databow
+  - pipx install databow
+  - cargo install databow
+  flags:
+  - name: --driver
+    summary: ADBC driver name (duckdb, postgresql, mysql, sqlite, snowflake, bigquery, ...).
+  - name: --uri
+    summary: Database URI (driver-specific format).
+  - name: --username
+    summary: Database username.
+  - name: --password
+    summary: Database password.
+  - name: --option
+    summary: Driver-specific option key=value (repeatable).
+  - name: --profile
+    summary: Use an ADBC connection profile by name or path.
+  - name: --query
+    summary: Run a single SQL query non-interactively.
+  - name: --file
+    summary: Execute a SQL file.
+  - name: --output
+    summary: Write results to a file (JSON/CSV/Arrow IPC).
+  - name: --mode
+    summary: Output rendering mode (ascii-markdown, ascii-no-borders, nothing, ...).

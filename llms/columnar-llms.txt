@@ -1,0 +1,46 @@
+# dbc
+
+> dbc is the command line tool for installing and managing ADBC drivers
+
+dbc simplifies the installation and management of Apache Arrow Database
+Connectivity (ADBC) drivers across multiple platforms including macOS,
+Linux, and Windows. It supports installing pre-built drivers with a
+single command, managing multiple drivers without conflicts, and creating
+reproducible environments with driver list files. dbc works great in
+CI/CD environments and can be installed via pip, Docker, Homebrew, and more.
+
+
+## Getting Started
+
+- [Installation](https://docs.columnar.tech/dbc/getting_started/installation/index.md): Installation instructions for all platforms
+- [First steps](https://docs.columnar.tech/dbc/getting_started/first_steps/index.md): Getting started with your first driver
+- [FAQ](https://docs.columnar.tech/dbc/getting_started/faq/index.md): Frequently asked questions
+
+## Guides
+
+- [Installing Drivers](https://docs.columnar.tech/dbc/guides/installing/index.md): How to install ADBC drivers
+- [Finding Drivers](https://docs.columnar.tech/dbc/guides/finding_drivers/index.md): Discovering available drivers
+- [Using a Driver List](https://docs.columnar.tech/dbc/guides/driver_list/index.md): Using driver lists for reproducible setups
+- [Driver Managers](https://docs.columnar.tech/dbc/guides/driver_manager/index.md): Working with driver managers
+- [Python Notebooks](https://docs.columnar.tech/dbc/guides/python_notebooks/index.md): Using dbc in Python notebooks
+- [Private Drivers](https://docs.columnar.tech/dbc/guides/private_drivers/index.md): Using private drivers
+- [Continuous Integration](https://docs.columnar.tech/dbc/guides/continuous_integration/index.md): Using dbc in CI/CD pipelines
+- [Version Control](https://docs.columnar.tech/dbc/guides/version_control/index.md): Using dbc with version control
+
+## Concepts
+
+- [Driver](https://docs.columnar.tech/dbc/concepts/driver/index.md): What is an ADBC driver
+- [Driver Manager](https://docs.columnar.tech/dbc/concepts/driver_manager/index.md): Understanding driver managers
+- [Driver Manifest](https://docs.columnar.tech/dbc/concepts/driver_manifest/index.md): Driver manifest files
+- [Driver List](https://docs.columnar.tech/dbc/concepts/driver_list/index.md): Driver list files for reproducibility
+- [Driver Registry](https://docs.columnar.tech/dbc/concepts/driver_registry/index.md): Driver registries
+
+## Reference
+
+- [Index](https://docs.columnar.tech/dbc/reference/index.md)
+- [Commands](https://docs.columnar.tech/dbc/reference/cli/index.md): CLI command reference
+- [Config Level](https://docs.columnar.tech/dbc/reference/config_level/index.md): Configuration levels
+- [Driver List](https://docs.columnar.tech/dbc/reference/driver_list/index.md): Driver list file format
+- [Supported Platforms](https://docs.columnar.tech/dbc/reference/supported_platforms/index.md): Supported platforms
+- [Analytics](https://docs.columnar.tech/dbc/reference/analytics/index.md): Analytics and telemetry
+

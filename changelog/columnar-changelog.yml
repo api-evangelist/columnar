@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://columnar.tech/blog/
+scheme: semver
+note: Columnar publishes release and product announcements on its blog; dbc and databow version with semver. This captures the recent window of dated announcements, not a full per-release changelog.
+entries:
+- date: '2026-07-08'
+  title: Announcing the DuckDB ADBC Extension
+  type: addition
+  url: https://columnar.tech/blog/
+  highlights: DuckDB community `adbc` extension for querying any ADBC-supported database from DuckDB SQL.
+- date: '2026-06-02'
+  title: Introducing databow
+  type: addition
+  url: https://columnar.tech/blog/
+  highlights: New command-line SQL query tool (databow) over ADBC drivers.
+- date: '2026-05-21'
+  title: Announcing an ADBC driver for Quack
+  type: addition
+  url: https://columnar.tech/blog/
+- date: '2026-05-08'
+  title: Announcing dbc 0.3.0
+  version: 0.3.0
+  type: release
+  url: https://columnar.tech/blog/
+- date: '2026-02-10'
+  title: Announcing dbc 0.2.0
+  version: 0.2.0
+  type: release
+  url: https://columnar.tech/blog/
+- date: '2025-10-29'
+  title: Introducing dbc / Announcing Columnar
+  type: release
+  url: https://columnar.tech/blog/
+  highlights: Company launch and first release of dbc.

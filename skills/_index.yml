@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/columnar-tech/skills
+skills:
+- file: columnar-adbc.md
+  name: adbc
+  description: Connect to and work with databases using Arrow Database Connectivity (ADBC).
+  version: '0.2.2'
+- file: columnar-dbc.md
+  name: dbc
+  description: Install ADBC (Arrow Database Connectivity) drivers with dbc.
+  version: '1.1.2'
+- file: columnar-databow.md
+  name: databow
+  description: Query SQL databases with the databow CLI.
+  version: '0.1.0'
+- file: columnar-duckdb-adbc.md
+  name: duckdb-adbc
+  description: Query external databases from DuckDB using the ADBC community extension.
+  version: '0.1.0'

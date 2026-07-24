@@ -1,0 +1,56 @@
+generated: '2026-07-18'
+method: searched
+source: https://columnar.tech/dbc/ + registry lookups (PyPI, crates.io, npm, Homebrew, WinGet)
+packages:
+# dbc — command-line package manager for ADBC drivers
+- language: python
+  registry: pypi
+  name: dbc
+  version: 0.3.0
+  url: https://pypi.org/project/dbc/
+  install: pipx install dbc
+  official: true
+  tool: dbc
+- language: python
+  registry: pypi
+  name: dbc
+  url: https://pypi.org/project/dbc/
+  install: uv tool install dbc
+  official: true
+  tool: dbc
+- language: javascript
+  registry: npm
+  name: "@columnar-tech/dbc"
+  url: https://www.npmjs.com/package/@columnar-tech/dbc
+  install: npm install -g @columnar-tech/dbc
+  official: true
+  tool: dbc
+- language: shell
+  registry: homebrew
+  name: columnar-tech/tap/dbc
+  url: https://github.com/columnar-tech/homebrew-tap
+  install: brew install columnar-tech/tap/dbc
+  official: true
+  tool: dbc
+- language: shell
+  registry: winget
+  name: Columnar.dbc
+  install: winget install Columnar.dbc
+  official: true
+  tool: dbc
+# databow — command-line SQL query tool over ADBC
+- language: rust
+  registry: crates.io
+  name: databow
+  version: 0.1.2
+  url: https://crates.io/crates/databow
+  install: cargo install databow
+  official: true
+  tool: databow
+- language: python
+  registry: pypi
+  name: databow
+  url: https://pypi.org/project/databow/
+  install: uv tool install databow
+  official: true
+  tool: databow

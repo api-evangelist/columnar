@@ -1,8 +1,26 @@
 aid: columnar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/columnar.png
 name: Columnar
-description: 'Columnar is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: data. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Columnar is a data-infrastructure company advancing open standards for
+  database connectivity. It builds and maintains tooling around ADBC (Apache Arrow
+  Database Connectivity), including dbc — a cross-platform command-line package manager
+  that installs and manages ADBC drivers across macOS, Linux, and Windows and eight
+  programming languages — and databow, a command-line SQL query tool over ADBC. Columnar
+  also ships the DuckDB ADBC community extension and publishes Agent Skills so AI agents
+  can connect to and query databases through ADBC. The company was surfaced as a portfolio
+  company of Bessemer Venture Partners and is built on the Apache Arrow open-source
+  ecosystem.'
 url: https://raw.githubusercontent.com/api-evangelist/columnar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Data
+- ADBC
+- Apache Arrow
+- Database Connectivity
+- Drivers
+- CLI
+- DuckDB
+- Open Source
+- Agent Skills
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +51,38 @@ maintainers:
 common:
 - type: Website
   url: https://columnar.tech/
+- type: Documentation
+  url: https://docs.columnar.tech/
+- type: GettingStarted
+  url: https://docs.columnar.tech/dbc/getting_started/installation/
+- type: Blog
+  url: https://columnar.tech/blog/
+- type: GitHubOrganization
+  url: https://github.com/columnar-tech
+- type: Support
+  url: https://columnar.tech/interested/
+- type: AgentSkill
+  name: Columnar ADBC / dbc / databow Agent Skills
+  url: skills/_index.yml
+- type: CLI
+  name: dbc and databow CLIs
+  url: cli/columnar-cli.yml
+- type: Packages
+  url: packages/columnar-packages.yml
+- type: LLMsTxt
+  url: llms/columnar-llms.txt
+- type: ChangeLog
+  url: changelog/columnar-changelog.yml
+- type: DomainSecurity
+  url: security/columnar-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/columnar-tech/
+- type: X
+  url: https://x.com/columnar_tech
+- type: Bluesky
+  url: https://bsky.app/profile/columnar.tech
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
