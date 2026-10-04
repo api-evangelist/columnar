@@ -51,7 +51,7 @@ tags:
 - Drivers
 - CLI
 - DuckDB
-- Open-Source
+- Open Source
 - Agent Skills
 tags_raw:
 - Company
@@ -64,6 +64,7 @@ tags_raw:
 - DuckDB
 - Open Source
 - Agent Skills
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
